@@ -29,7 +29,7 @@ export default function Todo() {
                 <button>Add</button>
             </form> */}
             <Form todos={todos} setTodos={setTodos}/>
-            <TodoList todos={todos} setTodos = {setTodos}/>
+            <TodoList todos={todos} setTodos={setTodos}/>
             <Footer totalTodos={totalTodos} completedTodos={completedTodos} />
         </div>
     );
