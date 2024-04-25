@@ -10,7 +10,7 @@ export default function TodoItem({ todo, todos, setTodos }) {
     }
 
     function handleClick(name) {
-        let newArr = todos.map(todo =>
+        let newArr = todos.map((todo) =>
             todo.name === name ? { ...todo, done: !todo.done } : todo
         );
         console.log(newArr);
@@ -21,7 +21,7 @@ export default function TodoItem({ todo, todos, setTodos }) {
         <div className={style.item}>
             <div className={style.itemName}>
                 <span
-                    className={todo.done?style.completed:""} 
+                    className={todo.done ? style.completed: ""} 
                     key={todo.name}
                     onClick={() => handleClick(todo.name)}
                 >
